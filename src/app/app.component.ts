@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AccordionModule } from 'primeng/accordion';     //accordion and accordion tab
-import { MenuItem } from 'primeng/api';                  //api
-import { PrimeNGConfig } from 'primeng/api';
+import { AccordionModule } from 'primeng-lts/accordion';     //accordion and accordion tab
+import { MenuItem } from 'primeng-lts/api';                  //api
+// import { PrimeNGConfig } from 'primeng-lts/api';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +9,9 @@ import { PrimeNGConfig } from 'primeng/api';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  constructor(private primengConfig: PrimeNGConfig) { }
+  // constructor(private primengConfig: PrimeNGConfig) { }
 
   ngOnInit() {
-    this.primengConfig.ripple = true;
+    // this.primengConfig.ripple = true;
   }
 }
