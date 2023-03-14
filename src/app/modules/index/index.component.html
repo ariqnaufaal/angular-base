@@ -1,6 +1,10 @@
 <div content>
 
-  <table id="example" class="display" style="width:100%">
+  <p-table #dt [value]="customers" [(selection)]="selectedCustomers" dataKey="id" [rowHover]="true" [rows]="10"
+    [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" [loading]="loading" [paginator]="true"
+    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [filterDelay]="0"
+    [globalFilterFields]="['name','country.name','representative.name','status']">
+    <!-- <table id="example" class="display" style="width:100%"> -->
     <ng-template pTemplate="header">
       <tr>
         <th>Name</th>
@@ -479,6 +483,7 @@
         <th>Salary</th>
       </tr>
     </tfoot>
-  </table>
+    <!-- </table> -->
+  </p-table>
 
 </div>
